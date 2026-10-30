@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mengenal Fotosintesis – IPAS Kelas IV</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#2e9e4f;--gd:#1f7a3a;--gl:#d4f1c8;--sky:#bfe6f7;--bg:#fff8e7;--card:#fff;--ink:#1d3b2a;--sun:#ffc93c;--line:#cfe8c2;--soil:#8a5a3b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--gl:#244a33;--sky:#2a5a78;--bg:#13251a;--card:#1d3526;--ink:#eaf6ec;--line:#2f5a40;--soil:#6b4429;--g:#47c26b}}
+:root[data-theme="dark"]{--gl:#244a33;--sky:#2a5a78;--bg:#13251a;--card:#1d3526;--ink:#eaf6ec;--line:#2f5a40;--soil:#6b4429;--g:#47c26b}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 clamp(18px,1.6vw,22px)/1.55 Nunito,"Trebuchet MS",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:30}
+h1,h2,h3{font-family:"Baloo 2","Comic Sans MS",sans-serif;line-height:1.15;margin:0 0 .4em}
+h1{font-size:clamp(38px,6vw,72px);font-weight:800;color:var(--gd)}
+h2{font-size:clamp(28px,3.6vw,44px);font-weight:800;color:var(--gd)}
+h3{font-size:1.25em;font-weight:800}
+p{margin:.3em 0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--card);border-bottom:3px solid var(--line);display:flex;gap:6px;overflow-x:auto;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--ink);font:700 16px "Baloo 2",sans-serif;padding:6px 14px;border-radius:99px;background:var(--gl)}
+nav a:hover,nav a:focus-visible{background:var(--g);color:#fff;outline:none}
+.sec{max-width:1100px;margin:0 auto;padding:56px 20px;scroll-margin-top:60px}
+.lead{font-size:1.15em;max-width:42em}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;max-width:1100px;margin:0 auto;padding:36px 20px 20px}
+.hero .sub{font:700 clamp(22px,2.6vw,30px) "Baloo 2",sans-serif;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+.chips span{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:4px 12px;font-weight:700}
+.btn{font:800 1.1em "Baloo 2",sans-serif;background:var(--g);color:#fff;border:0;border-radius:99px;padding:10px 28px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 5px 0 var(--gd);transition:transform .1s}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--gd)}
+.btn.alt{background:var(--sun);color:#4a3600;box-shadow:0 5px 0 #c99a1a}
+.btn:focus-visible,.step:focus-visible,.card.click:focus-visible{outline:4px solid #1b6fd1;outline-offset:3px}
+.art{border-radius:28px;overflow:hidden;border:4px solid var(--line);background:var(--sky)}
+.art svg{display:block;width:100%;height:auto}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:3px solid var(--line);border-radius:22px;padding:20px;text-align:left;font:inherit;color:inherit}
+.card .em{font-size:52px;line-height:1.1;display:block}
+.card.click{cursor:pointer;transition:transform .15s,border-color .15s}
+.card.click:hover{transform:translateY(-4px);border-color:var(--g)}
+.card.on{border-color:var(--g);background:var(--gl)}
+.big{font-size:clamp(46px,7vw,84px);letter-spacing:.1em}
+.q{background:var(--gl);border-radius:22px;padding:18px 24px;font:700 1.3em "Baloo 2",sans-serif;margin:18px 0}
+.info{display:flex;gap:16px;align-items:center;background:var(--card);border:3px solid var(--g);border-radius:22px;padding:16px 20px;margin-top:16px;min-height:110px}
+.info .ic{font-size:54px}
+.info h3{margin:0;color:var(--gd)}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start}
+.steps{display:flex;flex-direction:column;gap:10px}
+.step{display:flex;gap:12px;align-items:center;background:var(--card);border:3px solid var(--line);border-radius:18px;padding:10px 14px;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.step b{flex:none;width:38px;height:38px;border-radius:50%;background:var(--gl);display:grid;place-items:center;font-family:"Baloo 2",sans-serif}
+.step.done b{background:var(--g);color:#fff}
+.step.on{border-color:var(--sun);background:#fff3c4;color:#3a2c00}
+.step.on b{background:var(--sun);color:#3a2c00}
+.ctrl{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+.eq{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;font:800 1.15em "Baloo 2",sans-serif;margin-top:18px}
+.eq span{padding:8px 16px;border-radius:16px;background:var(--card);border:3px solid var(--line)}
+.eq .in{background:#dff3ff;color:#0f3d5e}.eq .out{background:#ffe7c2;color:#5a3300;opacity:.35;transition:.4s}
+.eq.lit .out{opacity:1;border-color:#ff9f1c;transform:scale(1.06)}
+.note{background:#fff3c4;color:#3a2c00;border-radius:16px;padding:12px 18px;margin-top:14px;font-weight:700}
+.sun-ring{transform-origin:90px 80px;animation:spin 24s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+[data-part]{cursor:pointer}
+[data-part].hl{filter:drop-shadow(0 0 10px #ffc93c)}
+.chlc{opacity:0;transition:opacity .5s}.chl .chlc,.chlc.show{opacity:1}
+.leafbig{cursor:pointer}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:42px;margin-top:10px}
+.flow i{font:800 28px "Baloo 2",sans-serif;font-style:normal;color:var(--gd)}
+.close{background:var(--g);color:#fff;border-radius:26px;padding:26px;text-align:center;font:800 clamp(22px,3vw,34px) "Baloo 2",sans-serif;margin-top:28px}
+footer{text-align:center;padding:24px;font-size:16px}
+@media(max-width:820px){.hero,.two{grid-template-columns:1fr}.info .ic{font-size:40px}}
+html,body{height:100%}
+body{display:flex;flex-direction:column;overflow:hidden}
+nav{flex:none}
+#stage{flex:1;min-height:0;overflow-y:auto;position:relative}
+.slide{display:none;min-height:100%}
+.slide.on{display:block;animation:slin .35s}
+.hero.slide.on{display:grid;align-content:center}
+.sec{padding:24px 20px}
+@keyframes slin{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+#prog{flex:none;height:6px;background:var(--g);width:0;transition:width .3s}
+#bar{flex:none;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;background:var(--card);border-top:3px solid var(--line)}
+#bar .btn{padding:6px 22px;font-size:1em}
+#bar .btn[disabled]{opacity:.35;cursor:default}
+#cnt{font:800 1.1em "Baloo 2",sans-serif;color:var(--gd)}
+nav a.on{background:var(--g);color:#fff}
+#mus.on{background:var(--g);color:#fff;box-shadow:0 5px 0 var(--gd)}
+@media(max-width:520px){#mus .mt{display:none}}
+@media(prefers-reduced-motion:reduce){.slide.on{animation:none}}
+@media(prefers-reduced-motion:reduce){.sun-ring{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Menu materi">
+<a href="#awal">Awal</a><a href="#tujuan">Tujuan</a><a href="#petunjuk">Petunjuk</a><a href="#makanan">Makanan</a><a href="#arti">Pengertian</a><a href="#bahan">Bahan</a><a href="#proses">Proses</a><a href="#energi">Energi</a><a href="#tahu">Cadangan Makanan</a><a href="#manfaat">Manfaat</a><a href="#rawat">Merawat</a><a href="#rangkuman">Rangkuman</a>
+</nav>
+
+<header class="hero" id="awal">
+<div>
+<h1>MENGENAL FOTOSINTESIS</h1>
+<p class="sub">Bagaimana Tumbuhan Membuat Makanannya Sendiri?</p>
+<div class="chips"><span>Mata Pelajaran: IPAS</span><span>Kelas: IV SD</span><span>Materi: Fotosintesis, Proses Penting di Bumi</span><span>Kurikulum Merdeka · Fase B</span><span>Disusun oleh: Riri Nurjanah (2403757)</span></div>
+<a class="btn" href="#tujuan">▶ Mulai Belajar</a>
+</div>
+<div class="art" id="hero-art"></div>
+</header>
+
+<section class="sec" id="tujuan">
+<h2>Tujuan Belajar Kita</h2>
+<div class="note" style="margin:0 0 16px"><b>Capaian Pembelajaran:</b> Menjelaskan sumber dan bentuk energi, serta proses perubahan bentuk energi dalam kehidupan sehari-hari.</div>
+<div class="grid">
+<div class="card"><span class="em">🔎</span><h3>Bahan dan hasil</h3><p>Mengetahui apa saja yang dibutuhkan tumbuhan dan apa yang dihasilkan melalui fotosintesis.</p></div>
+<div class="card"><span class="em">🧑‍🤝‍🧑🐄</span><h3>Penting untuk semua</h3><p>Memahami mengapa fotosintesis penting bagi kehidupan manusia dan hewan.</p></div>
+</div>
+</section>
+
+<section class="sec" id="petunjuk" style="padding-top:0"><h2>Petunjuk Belajar</h2><div class="grid"><div class="card"><span class="em">🙏</span><p>Berdoalah sebelum mulai belajar.</p></div><div class="card"><span class="em">📖</span><p>Bacalah dan cermati dengan seksama isi materi.</p></div><div class="card"><span class="em">🙋</span><p>Tanyakan kepada guru tentang materi yang belum kamu pahami.</p></div><div class="card"><span class="em">🤝</span><p>Bersikaplah disiplin, jujur, saling tolong menolong, dan semangat!</p></div></div></section>
+
+<section class="sec" id="makanan">
+<h2>A. Bagaimana Tumbuhan Mendapatkan Makanan?</h2>
+<div class="flow"><span>🧒</span><span>🐄</span><span>🐔</span><span>🌿</span></div>
+<p class="lead">Manusia dan hewan membutuhkan makanan sebagai sumber energi. Manusia memasak atau membeli makanan, sedangkan hewan bergerak mencari mangsa. Tumbuhan tidak bisa berpindah tempat dan tidak punya mulut.</p>
+<div class="q">Manusia dan hewan membutuhkan makanan. Lalu, bagaimana tumbuhan mendapatkan makanannya?</div>
+<button class="btn alt" id="ans">Lihat jawabannya</button>
+<div class="note" id="ansbox" hidden>Sama seperti makhluk hidup lain, tumbuhan juga butuh makanan. Tumbuhan hijau membuat makanannya sendiri melalui proses yang dinamakan <b>fotosintesis</b>.</div>
+</section>
+
+<section class="sec" id="arti">
+<h2>B. Pengertian Fotosintesis</h2>
+<div class="two">
+<div>
+<p class="lead"><b>Fotosintesis</b> adalah proses tumbuhan hijau membuat makanan dengan memanfaatkan energi cahaya matahari. Proses ini terutama berlangsung pada daun yang memiliki <b>klorofil</b> atau zat hijau daun.</p>
+<div class="ctrl"><button class="btn alt" id="chlbtn">🔦 Tunjukkan klorofil</button></div>
+</div>
+<div class="art"><svg viewBox="0 0 400 300" role="img" aria-label="Daun menerima cahaya matahari">
+<rect width="400" height="300" fill="var(--sky)"/>
+<circle cx="60" cy="55" r="30" fill="#ffc93c"/>
+<g stroke="#ffc93c" stroke-width="7" stroke-linecap="round"><line x1="100" y1="85" x2="150" y2="130"/><line x1="85" y1="105" x2="120" y2="160"/><line x1="115" y1="70" x2="175" y2="105"/></g>
+<g class="leafbig" id="bigleaf"><path d="M120 250C150 120 280 70 360 90 345 190 250 270 120 250Z" fill="#43b05c"/><path d="M120 250C200 190 270 140 350 100" stroke="#a7e28a" stroke-width="6" fill="none"/>
+<g class="chlc" id="chlc" fill="#c8ff7a"><circle cx="230" cy="150" r="9"/><circle cx="280" cy="125" r="9"/><circle cx="200" cy="200" r="9"/><circle cx="300" cy="165" r="9"/><circle cx="250" cy="205" r="9"/><circle cx="170" cy="225" r="9"/></g></g>
+<text class="chlc" id="chlt" x="200" y="45" font-size="22" font-weight="800" fill="var(--ink)" font-family="Baloo 2,sans-serif">Klorofil = zat hijau daun</text>
+</svg></div>
+</div>
+</section>
+
+<section class="sec" id="bahan">
+<h2>C. Bahan yang Dibutuhkan</h2>
+<p class="lead">Klik bagian tumbuhan atau kartu di bawah untuk melihat penjelasannya.</p>
+<div class="two">
+<div class="art" id="plant1"></div>
+<div class="steps" id="cards1">
+<button class="step" data-k="water"><b>💧</b><span><strong>Air</strong><br>Diserap akar dari tanah.</span></button>
+<button class="step" data-k="co2"><b>☁️</b><span><strong>Karbon dioksida (CO₂)</strong><br>Gas dari udara, masuk lewat stomata (mulut daun).</span></button>
+<button class="step" data-k="sun"><b>☀️</b><span><strong>Cahaya matahari</strong><br>Sumber energi utama untuk memasak makanan.</span></button>
+<button class="step" data-k="leaf"><b>🌿</b><span><strong>Klorofil</strong><br>Zat hijau daun penangkap energi cahaya matahari.</span></button>
+</div>
+</div>
+<div class="info" aria-live="polite" id="info1"><div class="ic">👆</div><div><h3>Ayo klik!</h3><p>Klik akar, batang, daun, awan CO₂, atau matahari.</p></div></div>
+</section>
+
+<section class="sec" id="proses">
+<h2>D. Proses Terjadinya Fotosintesis</h2>
+<div class="two">
+<div>
+<div class="art" id="plant2"></div>
+<div class="ctrl"><button class="btn" id="go">▶ Mulai</button><button class="btn alt" id="again">↻ Ulangi</button></div>
+</div>
+<div class="steps" id="steps2"></div>
+</div>
+<div class="info" aria-live="polite"><div class="ic" id="cap2e">🎬</div><div><h3 id="cap2h">Tekan “Mulai”</h3><p id="cap2p">Lihat tumbuhan membuat makanan langkah demi langkah.</p></div></div>
+<div class="eq" id="eq"><span class="in">💧 Air</span>+<span class="in">☁️ Karbon dioksida</span>+<span class="in">☀️ Energi cahaya</span>→<span class="out">🍞 Karbohidrat</span>+<span class="out">💨 Oksigen</span></div>
+<div class="grid" style="margin-top:18px">
+<div class="card"><h3>🍞 Karbohidrat</h3><p>Menjadi makanan bagi tumbuhan.</p></div>
+<div class="card"><h3>💨 Oksigen</h3><p>Dilepaskan ke udara.</p></div>
+</div>
+<div class="note">Ingat: klorofil membantu menangkap energi cahaya. Klorofil <b>bukan</b> hasil fotosintesis.</div>
+</section>
+
+<section class="sec" id="energi">
+<h2>E. Perubahan Bentuk Energi</h2>
+<p class="lead">Klik gambar atau tombol untuk melihat perjalanan energi.</p>
+<div class="art" id="en-art"><svg id="svg3" viewBox="0 0 700 240" style="cursor:pointer" role="img" aria-label="Energi cahaya menjadi energi kimia">
+<rect width="700" height="240" fill="var(--sky)"/>
+<text x="40" y="130" font-size="80">☀️</text><text x="285" y="130" font-size="80">🌿</text><text x="500" y="125" font-size="60">🍎</text><text x="560" y="125" font-size="60">🥕</text><text x="620" y="125" font-size="60">🍚</text>
+<g font-family="Baloo 2,sans-serif" font-weight="800" font-size="20" fill="var(--ink)" text-anchor="middle"><text x="85" y="185">Energi cahaya</text><text x="335" y="185">Daun</text><text x="580" y="185">Energi kimia dalam makanan</text></g>
+<g stroke="var(--g)" stroke-width="6" stroke-linecap="round"><path d="M150 100H260M400 100H490"/></g>
+<g class="fx"></g></svg></div>
+<div class="ctrl"><button class="btn" id="eg">▶ Lihat alur energi</button></div>
+<div class="info" aria-live="polite"><div class="ic">⚡</div><div><h3 id="enh">Energi cahaya matahari → Energi kimia</h3><p id="enp">Melalui fotosintesis, tumbuhan mengubah energi cahaya matahari menjadi energi kimia yang tersimpan dalam makanan.</p></div></div>
+</section>
+
+<section class="sec" id="tahu"><h2>Karbohidrat dan Cadangan Makanan</h2>
+<p class="lead">Energi kimia yang tersimpan contohnya adalah zat gula atau karbohidrat. Zat inilah yang membuat buah mangga terasa manis atau kentang mengenyangkan saat kita makan! Makanan hasil fotosintesis diedarkan ke seluruh bagian tumbuhan agar tumbuhan bisa tumbuh besar. Sisa makanan yang tidak langsung digunakan disimpan sebagai cadangan makanan.</p>
+<div class="note">💡 Tahukah kamu? Setiap tumbuhan menyimpan cadangan makanannya di tempat yang berbeda. Klik kartu untuk melihat contohnya.</div>
+<div class="grid" id="stor" style="margin-top:14px"><button class="card click"><span class="em">🥭</span><h3>Di dalam buah</h3><p hidden>Contoh: pohon mangga, apel, dan jeruk.</p></button><button class="card click"><span class="em">🥔</span><h3>Di dalam umbi (akar/batang)</h3><p hidden>Contoh: kentang, singkong, dan wortel.</p></button><button class="card click"><span class="em">🌽</span><h3>Di dalam biji</h3><p hidden>Contoh: padi, jagung, dan kacang tanah.</p></button><button class="card click"><span class="em">🎋</span><h3>Di dalam batang</h3><p hidden>Contoh: tebu dan sagu.</p></button></div></section>
+
+<section class="sec" id="manfaat">
+<h2>F. Pentingnya Fotosintesis</h2>
+<div class="grid">
+<div class="card"><span class="em">🍚🍎🐄</span><h3>Menyediakan makanan</h3><p>Tumbuhan adalah “koki” di Bumi. Buah, daun, dan umbi hasil fotosintesis menjadi makanan utama bagi manusia dan hewan untuk bertahan hidup.</p></div>
+<div class="card"><span class="em">💨🧒🐦</span><h3>Menghasilkan oksigen</h3><p>Tumbuhan melepaskan oksigen ke udara. Oksigen inilah yang kita dan hewan hirup setiap detik agar tetap hidup.</p></div>
+<div class="card"><span class="em">☀️➡️🍞</span><h3>Menyimpan energi matahari</h3><p>Energi matahari diubah menjadi energi kimia di buah atau umbi. Saat kita memakannya, energi itu menjadi tenaga untuk bermain dan belajar.</p></div>
+</div>
+<div class="note">💬 Ayo diskusi bersama kelompokmu: mengapa fotosintesis penting bagi manusia, hewan, dan makhluk hidup lain di Bumi?</div>
+</section>
+
+<section class="sec" id="rawat">
+<h2>G. Cara Merawat Tumbuhan</h2>
+<div class="two">
+<div class="card" style="text-align:center"><span class="big">👧🪴🚿</span></div>
+<div class="steps">
+<div class="step">💧 Menyiram tumbuhan secara teratur sesuai dengan kebutuhannya.</div>
+<div class="step">☀️ Memastikan tanaman mendapat cahaya matahari yang cukup.</div>
+<div class="step">🚫 Tidak merusak, memetik, atau mencabut tumbuhan secara sembarangan.</div>
+<div class="step">🌱 Ikut serta menanam dan merawat tanaman hijau di lingkungan rumah maupun sekolah.</div>
+<div class="step">🧹 Menjaga kebersihan lingkungan tempat tumbuhan hidup agar terbebas dari limbah atau sampah.</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="rangkuman">
+<h2>Rangkuman</h2>
+<div class="grid">
+<div class="card"><span class="em">🌿</span><h3>Pengertian</h3><p>Proses tumbuhan hijau membuat makanan dengan energi cahaya matahari, terutama di daun.</p></div>
+<div class="card"><span class="em">💧☁️☀️</span><h3>Bahan</h3><p>Air, karbon dioksida, dan energi cahaya. Klorofil membantu menangkap cahaya.</p></div>
+<div class="card"><span class="em">🍞💨</span><h3>Hasil</h3><p>Karbohidrat (makanan tumbuhan) dan oksigen (untuk makhluk hidup bernapas).</p></div>
+<div class="card"><span class="em">⚡</span><h3>Perubahan energi</h3><p>Energi cahaya matahari menjadi energi kimia dalam makanan.</p></div>
+<div class="card"><span class="em">🌍</span><h3>Pentingnya</h3><p>Mendukung ketersediaan makanan dan menghasilkan oksigen.</p></div>
+<div class="card"><span class="em">🤝</span><h3>Saling membutuhkan</h3><p>Sebagai makhluk hidup yang saling membutuhkan, kita perlu menjaga dan merawat tumbuhan di sekitar kita.</p></div>
+</div>
+<div class="close">“Sekarang kita tahu bahwa tumbuhan memiliki peran penting bagi kehidupan. Yuk, jaga dan rawat tumbuhan di sekitar kita!”</div>
+<p style="text-align:center;margin-top:22px"><a class="btn alt" href="#awal">⬆ Kembali ke awal</a></p>
+</section>
+<footer>IPAS Kelas IV SD · Bab 1: Mengubah Bentuk Energi · Topik B<br><small>Daftar Pustaka: Fitri, Amalia, dkk. (2023). <i>Ilmu Pengetahuan Alam dan Sosial untuk SD/MI Kelas IV</i> (Edisi Revisi) dan <i>Panduan Guru Ilmu Pengetahuan Alam dan Sosial untuk SD/MI Kelas IV</i> (Edisi Revisi). Jakarta: Pusat Perbukuan Kemendikbudristek.</small></footer>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s);
+const plant=()=>`<svg viewBox="0 0 600 480" role="img" aria-label="Tumbuhan dengan akar, batang, dan daun">
+<rect width="600" height="360" fill="var(--sky)"/><rect y="360" width="600" height="120" fill="var(--soil)"/><rect y="350" width="600" height="14" fill="#5cbf5a"/>
+<g data-part="sun"><circle cx="90" cy="80" r="34" fill="#ffc93c"/><circle class="sun-ring" cx="90" cy="80" r="50" fill="none" stroke="#ffc93c" stroke-width="7" stroke-dasharray="10 14"/></g>
+<g data-part="co2"><g fill="#fff"><circle cx="480" cy="140" r="30"/><circle cx="520" cy="150" r="26"/><circle cx="445" cy="155" r="22"/><rect x="445" y="150" width="100" height="26" rx="13"/></g><text x="495" y="165" text-anchor="middle" font-size="22" font-weight="800" fill="#586579" font-family="Baloo 2,sans-serif">CO₂</text></g>
+<g data-part="roots"><rect x="190" y="365" width="220" height="110" fill="transparent"/><g stroke="#d9a877" stroke-width="9" fill="none" stroke-linecap="round"><path d="M300 360C300 400 268 410 235 448"/><path d="M300 360C300 410 300 430 300 462"/><path d="M300 360C300 400 332 415 368 448"/><path d="M270 400C245 400 225 395 210 405"/></g></g>
+<g data-part="stem"><rect x="278" y="180" width="44" height="184" fill="transparent"/><rect x="291" y="190" width="18" height="172" rx="8" fill="#3c8f45"/></g>
+<g data-part="leaf"><path d="M300 262C270 190 190 180 150 215 185 275 255 285 300 262Z" fill="#43b05c"/><path d="M300 232C330 160 410 150 450 185 415 245 345 255 300 232Z" fill="#43b05c"/><path d="M300 195C260 150 270 100 300 80 330 100 340 150 300 195Z" fill="#4cc46a"/>
+<g stroke="#a7e28a" stroke-width="3" fill="none"><path d="M300 262C250 235 200 225 160 218"/><path d="M300 232C350 210 400 195 440 188"/><path d="M300 195V95"/></g>
+<g fill="#1d6b35"><circle cx="395" cy="210" r="4"/><circle cx="375" cy="218" r="4"/><circle cx="415" cy="198" r="4"/></g>
+<g class="chlc" fill="#c8ff7a"><circle cx="220" cy="232" r="8"/><circle cx="260" cy="244" r="8"/><circle cx="370" cy="200" r="8"/><circle cx="410" cy="190" r="8"/><circle cx="300" cy="140" r="8"/><circle cx="295" cy="110" r="7"/></g></g>
+<g class="fx"></g></svg>`;
+$('#hero-art').innerHTML=plant();$('#plant1').innerHTML=plant();$('#plant2').innerHTML=plant();
+$('#ans').onclick=()=>{$('#ansbox').hidden=false};
+$('#chlbtn').onclick=$('#bigleaf').onclick=()=>{$('#chlc').classList.toggle('show');$('#chlt').classList.toggle('show')};
+
+/* animasi partikel */
+const pos=(p,t)=>{const L=[];let tot=0;for(let i=0;i<p.length-1;i++){const d=Math.hypot(p[i+1][0]-p[i][0],p[i+1][1]-p[i][1]);L.push(d);tot+=d}let k=t*tot;for(let i=0;i<L.length;i++){if(k<=L[i]){const f=k/L[i];return[p[i][0]+(p[i+1][0]-p[i][0])*f,p[i][1]+(p[i+1][1]-p[i][1])*f]}k-=L[i]}return p[p.length-1]};
+const mk=k=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.innerHTML={
+water:'<path d="M0-12C8-2 9 8 0 9-9 8-8-2 0-12Z" fill="#2f9be0" stroke="#fff" stroke-width="2"/>',
+co2:'<circle r="17" fill="#8a94a6" stroke="#fff" stroke-width="2"/><text y="5" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">CO₂</text>',
+light:'<circle r="9" fill="#ffc93c" stroke="#fff" stroke-width="2"/>',
+o2:'<circle r="17" fill="#7fd6ff" stroke="#fff" stroke-width="2"/><text y="5" text-anchor="middle" font-size="13" font-weight="800" fill="#0f3d5e">O₂</text>',
+carb:'<polygon points="0,-12 10,-6 10,6 0,12 -10,6 -10,-6" fill="#ff9f1c" stroke="#fff" stroke-width="2"/>'}[k];g.style.opacity=0;return g};
+function fly(svg,kind,pts,n=4,dur=1800,gap=350,stay=false){const g0=svg.__g||0,fx=$('.fx',svg),els=[],t0=[];
+return new Promise(res=>{for(let i=0;i<n;i++){const e=mk(kind);fx.appendChild(e);els.push(e);t0.push(performance.now()+i*gap)}
+const tick=now=>{if((svg.__g||0)!==g0){els.forEach(e=>e.remove());return res()}let alive=0;
+els.forEach((e,i)=>{const t=(now-t0[i])/dur;if(t<0){alive++;return}if(t>=1){const[x,y]=pos(pts,1);e.setAttribute('transform',`translate(${x},${y})`);e.style.opacity=stay?1:0;return}alive++;const[x,y]=pos(pts,t);e.setAttribute('transform',`translate(${x},${y})`);e.style.opacity=Math.min(1,t*6,(1-t)*6)});
+if(alive)requestAnimationFrame(tick);else{if(!stay)els.forEach(e=>e.remove());res()}};requestAnimationFrame(tick)})}
+const hl=(s,n,chl)=>{s.querySelectorAll('[data-part]').forEach(g=>g.classList.toggle('hl',n.includes(g.dataset.part)));s.classList.toggle('chl',!!chl)};
+const reset=s=>{s.__g=(s.__g||0)+1;$('.fx',s).innerHTML='';hl(s,[])};
+const RW=[[170,415],[250,440],[300,385]],SW=[[300,385],[300,300],[300,235]],LW=[[300,235],[250,228],[215,222]],
+CO=[[495,160],[440,195],[398,212],[350,225]],LI=[[120,100],[190,160],[235,215]];
+
+/* bagian interaktif */
+const I={
+root:{e:'🌱',t:'Akar menyerap air',d:'Akar menyerap air dari dalam tanah.',run:async s=>{hl(s,['roots']);await fly(s,'water',RW,5,1700,300)}},
+stem:{e:'🌳',t:'Batang mengangkut air',d:'Air naik dari akar, lewat batang, menuju daun.',run:async s=>{hl(s,['stem']);await fly(s,'water',SW,5,1500,300)}},
+leaf:{e:'🌿',t:'Daun dan klorofil',d:'Daun punya klorofil, zat hijau daun. Klorofil menangkap energi cahaya matahari.',run:async s=>{hl(s,['leaf'],1);await fly(s,'light',LI,4,1500,300)}},
+co2:{e:'☁️',t:'Karbon dioksida masuk',d:'Karbon dioksida adalah gas dari udara. Gas ini masuk ke dalam daun melalui stomata (mulut daun).',run:async s=>{hl(s,['co2']);await fly(s,'co2',CO,3,2000,500)}},
+sun:{e:'☀️',t:'Cahaya matahari',d:'Sumber energi utama yang digunakan untuk memasak makanan dalam proses fotosintesis.',run:async s=>{hl(s,['sun']);await fly(s,'light',LI,5,1500,250)}},
+water:{e:'💧',t:'Air untuk tumbuhan',d:'Air diserap akar dari tanah, lalu diangkut melalui batang menuju daun.',run:async s=>{hl(s,['roots']);await fly(s,'water',RW,3,1200,250);hl(s,['stem']);await fly(s,'water',SW,3,1200,250);hl(s,['leaf']);await fly(s,'water',LW,3,900,200)}}};
+const s1=$('#plant1 svg');
+function show(k){const o=I[k];reset(s1);$('#info1').innerHTML=`<div class="ic">${o.e}</div><div><h3>${o.t}</h3><p>${o.d}</p></div>`;
+document.querySelectorAll('#cards1 .step').forEach(b=>b.classList.toggle('on',b.dataset.k===k));o.run(s1)}
+s1.querySelectorAll('[data-part]').forEach(g=>g.onclick=()=>show({roots:'root'}[g.dataset.part]||g.dataset.part));
+document.querySelectorAll('#cards1 .step').forEach(b=>b.onclick=()=>show(b.dataset.k));
+
+/* proses */
+const s2=$('#plant2 svg');
+const S=[
+{e:'🌱',h:'1. Akar menyerap air',p:'Akar menyerap air dari tanah.',run:async s=>{hl(s,['roots']);await fly(s,'water',RW,5,1700,300)}},
+{e:'🌳',h:'2. Air naik ke daun',p:'Air bergerak melalui batang menuju daun.',run:async s=>{hl(s,['stem']);await fly(s,'water',SW.concat([LW[1]]),5,1700,300)}},
+{e:'☁️',h:'3. Karbon dioksida masuk',p:'Daun mengambil karbon dioksida dari udara melalui lubang kecil bernama stomata.',run:async s=>{hl(s,['co2']);await fly(s,'co2',CO,3,2000,500)}},
+{e:'☀️',h:'4. Klorofil menangkap cahaya',p:'Klorofil pada daun menangkap energi cahaya matahari.',run:async s=>{hl(s,['sun','leaf'],1);await fly(s,'light',LI,5,1500,250)}},
+{e:'🍞',h:'5. Terbentuk karbohidrat dan oksigen',p:'Dengan energi cahaya itu, tumbuhan mengolah air dan karbon dioksida untuk menghasilkan karbohidrat serta oksigen.',run:async s=>{hl(s,['leaf'],1);$('#eq').classList.add('lit');
+await Promise.all([fly(s,'carb',[[300,225],[300,300],[300,335]],3,1800,500,true),fly(s,'o2',[[240,215],[200,120],[170,40]],3,2600,500),fly(s,'o2',[[400,195],[450,110],[480,30]],3,2600,700)])}}];
+const L=$('#steps2');L.innerHTML=S.map((x,i)=>`<button class="step" data-i="${i}"><b>${i+1}</b><span>${x.p}</span></button>`).join('');
+const mark=i=>{[...L.children].forEach((b,j)=>{b.classList.toggle('on',j===i);b.classList.toggle('done',j<i)});const x=S[i];$('#cap2e').textContent=x.e;$('#cap2h').textContent=x.h;$('#cap2p').textContent=x.p};
+function clear2(){reset(s2);$('#eq').classList.remove('lit');[...L.children].forEach(b=>b.classList.remove('on','done'))}
+async function play(from=0,all=true){clear2();const g=s2.__g;for(let i=from;i<S.length;i++){if(s2.__g!==g)return;mark(i);await S[i].run(s2);if(!all)break}
+if(s2.__g===g&&all){[...L.children].forEach(b=>{b.classList.remove('on');b.classList.add('done')});s2.classList.remove('chl');hl(s2,[])}}
+$('#go').onclick=()=>play();$('#again').onclick=()=>play();
+[...L.children].forEach((b,i)=>b.onclick=()=>play(i,false));
+
+/* energi */
+const s3=$('#svg3');
+async function energy(){reset(s3);const g=s3.__g,h=$('#enh'),p=$('#enp');
+h.textContent='1. Cahaya sampai ke daun';p.textContent='Energi cahaya matahari mengenai daun.';
+await fly(s3,'light',[[150,100],[270,100]],4,1400,300);if(s3.__g!==g)return;
+h.textContent='2. Daun melakukan fotosintesis';p.textContent='Daun mengubah energi cahaya menjadi energi kimia.';
+await fly(s3,'carb',[[400,100],[490,100]],3,1400,350);if(s3.__g!==g)return;
+h.textContent='3. Energi kimia tersimpan';p.textContent='Melalui fotosintesis, tumbuhan mengubah energi cahaya matahari menjadi energi kimia yang tersimpan dalam makanan.'}
+$('#eg').onclick=s3.onclick=energy;
+document.querySelectorAll('#stor .card').forEach(b=>b.onclick=()=>{b.classList.toggle('on');const p=$('p',b);p.hidden=!p.hidden});
+
+/* mode slide seperti aplikasi */
+const slides=[...document.querySelectorAll('header.hero,section.sec')],ids=slides.map(s=>s.id);
+const stage=document.createElement('main');stage.id='stage';slides[0].before(stage);
+slides.forEach(s=>{s.classList.add('slide');stage.appendChild(s)});
+slides[slides.length-1].appendChild($('footer'));
+stage.insertAdjacentHTML('afterend','<div id="prog"></div><div id="bar"><button class="btn alt" id="pv">◀ Kembali</button><span id="cnt"></span><button class="btn alt" id="mus" aria-pressed="false" title="Nyalakan atau matikan musik">🔇 <span class="mt">Musik</span></button><button class="btn" id="nx">Lanjut ▶</button></div>');
+let cur=-1;
+function go(i){i=Math.max(0,Math.min(slides.length-1,i));if(i===cur)return;cur=i;[s1,s2,s3].forEach(reset);clear2();
+slides.forEach((s,j)=>s.classList.toggle('on',j===i));
+document.querySelectorAll('nav a').forEach(a=>{const on=a.getAttribute('href')==='#'+ids[i];a.classList.toggle('on',on);if(on)$('nav').scrollLeft=a.offsetLeft-120});
+$('#cnt').textContent=(i+1)+' / '+slides.length;$('#prog').style.width=((i+1)/slides.length*100)+'%';
+$('#pv').disabled=i===0;$('#nx').disabled=i===slides.length-1;stage.scrollTop=0;
+try{history.replaceState(null,'','#'+ids[i])}catch(e){}}
+$('#pv').onclick=()=>go(cur-1);$('#nx').onclick=()=>go(cur+1);
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown')go(cur+1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(cur-1)});
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=e=>{e.preventDefault();const j=ids.indexOf(a.getAttribute('href').slice(1));if(j>=0)go(j)});
+window.addEventListener('hashchange',()=>{const j=ids.indexOf(location.hash.slice(1));if(j>=0)go(j)});
+let tx=0,ty=0;stage.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+stage.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>90&&Math.abs(dy)<50)go(cur+(dx<0?1:-1))});
+/* musik latar (dibuat langsung oleh browser, bisa dinyalakan/dimatikan) */
+let ac,mg,tm,nb,stp=0,nt=0,playing=false;
+const MEL=[0,4,7,4,9,7,4,2, 4,9,12,9,7,4,2,4, 5,9,12,9,7,5,4,2, 2,7,11,7,9,7,4,0],BAS=[-24,-27,-31,-29];
+const fq=n=>523.25*Math.pow(2,n/12);
+function tone(f,t,d,type,v){const o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.value=f;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(v,t+0.02);g.gain.exponentialRampToValueAtTime(0.0001,t+d);o.connect(g);g.connect(mg);o.start(t);o.stop(t+d+0.05)}
+const CH=[[-12,-8,-5],[-15,-12,-8],[-19,-15,-12],[-17,-13,-10]];
+function hat(t,v){const s=ac.createBufferSource();s.buffer=nb;const f=ac.createBiquadFilter();f.type='highpass';f.frequency.value=6000;const g=ac.createGain();g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(0.0001,t+0.06);s.connect(f);f.connect(g);g.connect(mg);s.start(t);s.stop(t+0.08)}
+function sched(){while(nt<ac.currentTime+0.3){const b=Math.floor(stp/8),s=stp%8,f=fq(MEL[stp]);
+tone(f,nt,0.55,'triangle',0.55);tone(f*2,nt,0.2,'sine',0.22);
+if(s===0)CH[b].forEach(n=>tone(fq(n),nt,2.2,'sine',0.22));
+if(s%4===0)tone(fq(BAS[b]),nt,0.9,'sine',0.8);
+hat(nt,s%2?0.12:0.06);nt+=0.28;stp=(stp+1)%32}}
+function music(on){try{if(on){if(!ac){ac=new(window.AudioContext||window.webkitAudioContext)();mg=ac.createGain();mg.gain.value=0;const cp=ac.createDynamicsCompressor();mg.connect(cp);cp.connect(ac.destination);nb=ac.createBuffer(1,Math.floor(ac.sampleRate*0.1),ac.sampleRate);const dd=nb.getChannelData(0);for(let i=0;i<dd.length;i++)dd[i]=Math.random()*2-1}
+ac.resume();mg.gain.setTargetAtTime(0.3,ac.currentTime,0.3);nt=ac.currentTime+0.1;clearInterval(tm);tm=setInterval(sched,100)}
+else{clearInterval(tm);if(mg)mg.gain.setTargetAtTime(0,ac.currentTime,0.12)}}catch(e){on=false}
+playing=on;const mb=$('#mus');mb.firstChild.textContent=on?'🎵 ':'🔇 ';mb.classList.toggle('on',on);mb.setAttribute('aria-pressed',on)}
+$('#mus').onclick=()=>music(!playing);
+go(Math.max(0,ids.indexOf(location.hash.slice(1))));
+</script>
+</body>
+</html>
